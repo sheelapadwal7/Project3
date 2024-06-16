@@ -17,6 +17,7 @@ public class AssistantController {
     @Autowired
     private AssistantService assistantService;
 
+    //get All Assistant
     @GetMapping
     public ResponseEntity<List<Assistant>> getAllAssistants() {
         List<Assistant> assistants = assistantService.getAllAssistants();
